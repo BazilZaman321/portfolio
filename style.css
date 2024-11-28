@@ -1,0 +1,246 @@
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.zero {
+    background-color: antiquewhite;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.two {
+    margin-right: 50px;
+    padding: 10px;
+    background-color: antiquewhite;
+    font-size: large;
+}
+
+#man {
+    padding: 10px;
+    background-color: antiquewhite;
+    font-size: large;
+}
+
+#three {
+    width: 250px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.four {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 200px;
+    height: 700px;
+}
+
+#about {
+    background-color: wheat;
+    height: 700px;
+    text-align: center;
+    padding-top: 300px;
+    font-size: larger;
+}
+
+.six {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#seven {
+    height: 750px;
+    background-color: lightblue;
+    transition: box-shadow 0.3s ease;
+}
+
+.eight {
+    height: 200px;
+}
+
+.eight:hover {
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+}
+
+.nine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin-top: 100px;
+}
+
+#eleven {
+    background-color: lightgreen;
+    height: 730px;
+}
+
+.twelve {
+    height: 700px;
+    background-color: lightpink;
+}
+
+.therteen {
+    padding-top: 70px;
+    padding-right: 250px;
+    font-size: x-large;
+}
+
+.therteen h3 {
+    color: blue;
+}
+
+#project {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#skills {
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+@media (max-width: 768px) {
+    .one {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .two {
+        margin: 5px 0;
+        font-size: 1rem;
+    }
+
+    #man {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .four {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .therteen {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    #three {
+        max-width: 150px;
+        height: auto;
+    }
+
+    #about {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .nine {
+        flex-direction: row;
+        gap: 5px;
+        margin-top: 20px;
+    }
+
+    .eight {
+        height: 150px;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .two {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    #man {
+        font-size: 0.8rem;
+    }
+
+    .therteen {
+        font-size: 0.9rem;
+    }
+
+    #three {
+        max-width: 120px;
+    }
+
+    .eight {
+        height: 100px;
+        width: auto;
+    }
+
+    .six {
+        font-size: 1.2rem;
+    }
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact-form .form-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form .form-control {
+        padding: 10px;
+    }
+
+    .contact-form .btn-primary {
+        padding: 10px 15px;
+    }
+}
